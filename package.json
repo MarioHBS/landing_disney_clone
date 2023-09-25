@@ -1,0 +1,17 @@
+{
+  "name": "curso_ebac_prjt4_disney_clone",
+  "version": "1.0.0",
+  "description": "Repositório para exercícios da EBAC",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0"
+  }
+}
