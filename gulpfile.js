@@ -3,7 +3,7 @@ const sass = require('gulp-sass')(require('sass'));
 
 const rename = require('gulp-rename');
 
-function styles(cb) {
+function styles() {
     return gulp.src('./src/styles/*.scss')
         // .pipe(sourcemap.init())
         .pipe(sass({
@@ -15,3 +15,6 @@ function styles(cb) {
 }
 
 exports.default = styles;
+exports.watch = function() {
+    gulp.watch('.src/styles/*.scss', gulp.parallel(styles));
+}
