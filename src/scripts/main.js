@@ -9,9 +9,19 @@ document.addEventListener("DOMContentLoaded", () => {
             
             escondeAbas();
             tab.classList.add('shows__list--is-active');
+            removeAtivo();
+            bt.target.classList.add('shows__tabs__button--is-active');
         });
     }
 })
+
+function removeAtivo() {
+    const buttons = document.querySelectorAll('[data-tab-button]');
+
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].classList.remove('shows__tabs__button--is-active');
+    }
+}
 
 function escondeAbas() {
     const tabsContainer = document.querySelectorAll('[data-tab-id]');

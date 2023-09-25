@@ -30,12 +30,14 @@
             background: none;
             font-size: 20px;
             border: none;
+            border-bottom: 5px solid transparent;
             padding-bottom: 5px;
             text-transform: uppercase;
             margin: 0 1vw;
+            cursor: pointer;
 
             &--is-active {
-                border-bottom: 5px solid variaveis.$corTextoSecundario;
+                border-color: variaveis.$corTextoSecundario; // muda apenas a cor da borda
             }
         }
     }
