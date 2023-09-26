@@ -4,6 +4,7 @@
 @use 'plans';
 @use 'devices';
 @use 'faq';
+@use 'footer';
 
 @font-face {
     font-family: Avenir;
@@ -54,7 +55,7 @@ body {
     @include text;
 }
 
-.tex--small {
+.text--small {
     @include text(12px);
 }
 
