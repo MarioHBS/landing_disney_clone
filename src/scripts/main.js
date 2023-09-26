@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const buttons = document.querySelectorAll('[data-tab-button]');
+    const questions = document.querySelectorAll('[data-faq-question]');
 
     for (let i = 0; i < buttons.length; i++) {
         buttons[i].addEventListener("click", (bt) => {
@@ -13,7 +14,19 @@ document.addEventListener("DOMContentLoaded", () => {
             bt.target.classList.add('shows__tabs__button--is-active');
         });
     }
+
+    for (let i = 0; i < questions.length; i++) {
+        questions[i].addEventListener('click', toggleQuestion)
+    }
 })
+
+function toggleQuestion(elem) {
+    const classe = 'faq__questions__item--is-open';
+    console.log(elem.target);
+    const pai = elem.target.parentNode;
+
+    pai.classList.toggle(classe);
+}
 
 function removeAtivo() {
     const buttons = document.querySelectorAll('[data-tab-button]');
