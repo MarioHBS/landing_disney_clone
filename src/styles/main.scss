@@ -2,6 +2,7 @@
 @use 'variaveis';
 @use 'shows';
 @use 'plans';
+@use 'devices';
 
 @font-face {
     font-family: Avenir;
@@ -19,6 +20,10 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Avenir, sans-serif;
+
+    ul {
+        list-style: none;
+    }
 }
 
 body {
