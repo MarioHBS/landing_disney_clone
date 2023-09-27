@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     window.addEventListener('scroll', () => {
         const posicao = window.scrollY;
-        console.log('scroll: ' + posicao + ' | altura: ' + heightHero);
-        console.log(heroSection.classList);
+        // console.log('scroll: ' + posicao + ' | altura: ' + heightHero);
+        // console.log(heroSection.classList);
 
         if (posicao < heightHero) { // True: esconde os elementos
             headerElmt.classList.add('header--is-hidden')

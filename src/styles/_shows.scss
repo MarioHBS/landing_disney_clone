@@ -20,6 +20,10 @@
         &--is-active {
             display: grid;
         }
+
+        @media (max-width: variaveis.$breakpointTablet) {
+            grid-template-columns: 1fr 1fr;
+        }
     }
 
     &__tabs {
@@ -40,6 +44,16 @@
             &--is-active {
                 border-color: variaveis.$corTextoSecundario; // muda apenas a cor da borda
             }
+
+            @media (max-width: variaveis.$breakpointTablet) {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: variaveis.$breakpointTablet) {
+            white-space: nowrap;
+            overflow-x: scroll;
+            padding-left: 20px;
         }
     }
 }

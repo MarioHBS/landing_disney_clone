@@ -1,3 +1,5 @@
+@use 'variaveis';
+
 .plans {
     padding: 5.6vw;
 
@@ -26,6 +28,14 @@
                 background-repeat: no-repeat;
                 background-size: contain;
             }
+        }
+
+        .button {
+            margin-top: 24px;
+        }
+
+        @media (max-width: variaveis.$breakpointTablet) {
+            display: block;
         }
     }
 

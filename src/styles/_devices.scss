@@ -1,3 +1,5 @@
+@use 'variaveis';
+
 .devices {
     padding: 5.6vw;
 
@@ -22,6 +24,10 @@
             img {
                 max-width: 100%;
             }
+        }
+
+        @media (max-width: variaveis.$breakpointTablet) {
+            grid-template-columns: 1fr 1fr;
         }
     }
 }
