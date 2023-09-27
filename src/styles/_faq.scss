@@ -24,6 +24,14 @@
                     align-items: center;
                     font-size: 45px;
                 }
+
+                @media (max-width: 768px) {
+                    max-width: 300px;
+
+                    &::after {
+                        right: -16px;
+                    }
+                }
             }
 
             &__answer { // #elem_02
